@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check adult or not</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+                
+        students = [
+            { name: 'John', age: 17 },
+            { name: 'Jane', age: 19 },
+            { name: 'Jack', age: 18 },
+        ];
+
+        AdultStudents = students.map(student => ({
+        ...student,
+        isAdult: student.age >= 18
+        }));
+
+        for(let a of AdultStudents){
+            for(let k in a){
+                document.write(k + "  :  "+a[k] + "<br>")
+            }
+            document.write("<br>*******************************<br><br>")
+        }
+        console.log(AdultStudents);
+
+        
+        
+        
+    </script>
+</body>
+</html>
