@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var n = parseInt(prompt("Enter a number be checked"))
+        temp = n
+        var ans = 0
+        while(n){
+            r = n%10
+            ans += fact(r) 
+            n = parseInt(n/10)
+        }
+
+        if(temp == ans){
+            document.write("Strong Number")
+        }
+        else{
+            document.write("Not a Strong Number")
+        }
+
+
+        function fact(n){
+            s = 1
+            for(let i=1;i<=n;i++){
+                s= s * i
+            }
+            return parseInt(s)
+        
+        }
+
+
+
+    </script>
+</body>
+</html>
