@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Enter a positive number for fibonacci series"))
+        var a = 0, b = 1, c = 0;
+        if(n<=0){
+            alert("Please enter a positive integer")
+        }
+        if(n==1){
+            document.write(a);
+        }
+        if(n==2){
+            document.write(b);
+        }
+        if(n>2){
+            document.write(a+"<br>")
+            for(let i = 0;i<=n;i++){
+                c = a + b;
+                document.write(c+"<br>")
+                a = b
+                b = c
+            }
+            
+        }
+        
+
+</script>
+
+
+
+    </script>
+</body>
+</html>
