@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:aliceblue;
+            width: 400px;
+            height: 300px;
+            padding: 30px;
+            margin: 140px;
+            margin-left: 160px;
+            border-radius: 20px;
+        }
+        .container>h1{
+            color: chocolate;
+            margin-left: 120px;
+            margin-top: 60px;
+        }
+        button{
+            height: 35px;
+            width: 100px;
+            margin-left: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <h1 id="num">0</h1>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+    </div>
+    
+
+    <script>
+        var n = 0
+        function increase(){
+            n = n + 1
+            document.getElementById('num').innerHTML=n;
+        }
+        function decrease(){
+            n = n - 1
+            document.getElementById('num').innerHTML=n;
+        }
+    </script>
+</body>
+</html>

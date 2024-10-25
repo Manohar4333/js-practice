@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var x = 4;
+        var even = new Promise(function(resolve,reject){
+            if(x%2==0){
+                resolve("Given number is Even")
+            }
+            else{
+                reject("Given number is odd")
+            }
+        }).then((a)=>document.write(a))
+        .catch((a)=>document.write(a))
+        .finally(()=>document.write("<br> Verification Success"))
+    </script>
+</body>
+</html>

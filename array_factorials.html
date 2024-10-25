@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var arr = [4,7,5,3,4,5,2,6,7]
+        var fact = arr.map(factorial)
+        document.write(fact)
+
+
+        function factorial(n){
+            ans = 1
+            for(let i = 1;i<=n;i++){
+                ans = ans*i
+            }
+            return ans;
+        }
+
+       
+    </script>
+</body>
+</html>

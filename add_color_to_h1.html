@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family:cursive;
+            padding: 20px;
+            margin: 100px;
+            margin-left: 200px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 120px;
+            margin-left: 120px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's code in leetcode  </h1>
+    <h1>Cook at codechef</h1>
+    <h1>Hack from Hackerrank</h1>
+    <h1>Get Strength from codeforces</h1>
+    <h1>Be the SPARK from SPOJ</h1>
+    <button onclick="color()">Change Color</button>
+
+
+
+    <script>
+        function color(){
+            let tag = document.getElementsByTagName("h1")
+            for(let i = 0;i<tag.length;i++){
+                tag[i].style.color = "red";
+            }
+
+        }
+    </script>
+</body>
+</html>

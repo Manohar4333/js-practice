@@ -6,28 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-
+    
 
     <script>
-        var i = parseInt(prompt("Enter a number to check palindrome : "))
-        document.write(palindrom(i))
-
-       function palindrom(n) {
-        temp = n
-        rev = 0
+        var n = parseInt(prompt('Enter a nummber to check palindrome'))
+        var temp = n
+        var rev = 0
         while(n){
             r = n%10
-            rev = (r*10) + r
+            rev = rev*10 + r
             n = parseInt(n/10)
-            
         }
-        if (r == temp){
-            return true
+        n = temp
+        if (rev == n){
+            document.write("Yes given number is palindrome")
         }
-        return false
-        
-
-       }
+        else{
+            document.write("<br> Not a palindrome ")
+        }
     </script>
 </body>
 </html>

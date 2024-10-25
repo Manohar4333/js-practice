@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+
+             display(){
+                document.write(`Name entered is : ${this.name}`)
+            }
+        }
+
+        class student extends person{
+            constructor(name,age,roll,rank){
+                super(name,age);
+                this.roll = roll;
+                this.rank = rank;
+            }
+
+            print(){
+                document.write(`Name of student is ${this.name} <br>
+                age is ${this.age} is holding the roll number ${this.roll} and passed with the rank ${this.rank}`)
+            }
+        }
+
+        class Teacher extends person{
+            constructor(name,age,subject,experience){
+                super(name,age)
+                this.subject = subject;
+                this.experience = experience;
+            }
+
+            print_details(){
+                document.write(`<br> <br>Name of trainer is ${this.name} and Teaches ${this.subject} subject and having ${this.experience} of experience`)
+            }
+        }
+
+
+
+
+        let p1 = new person("Google",22)
+        let s1 = new student("Vinay",24,"12p1",50032)
+        let t1 = new Teacher("Anirudh",43,"full stack",2)
+        s1.print()
+        t1.print_details()
+        // p1.display()
+    </script>
+</body>
+</html>
