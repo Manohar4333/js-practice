@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //q: Write a JavaScript program to print student details who got highest marks, create objects using class
+        class Student {
+            constructor(name, roll, marks) {
+                this.name = name;
+                this.roll = roll;
+                this.marks = marks;
+            }
+        }
+            const students = [
+                new Student("Rahul", 1, 90),
+                new Student("Rohan", 2, 85),
+                new Student("Rahan", 1, 95),
+                new Student("Rohan", 2, 80),
+            ];
+        function topper(){
+            let top = students[0]
+            for(let i = 0;i<students.length;i++){
+                if(students[i].marks>top.marks){
+                    top = students[i];
+            }
+            }
+            return top;
+        }
+        console.log(topper());
+            //Q:Write a JavaScript program to print student details who got highest marks, create objects using class
+            
+                    
+            
+            
+
+
+
+
+    </script>
+</body>
+</html>

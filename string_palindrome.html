@@ -7,16 +7,19 @@
 </head>
 <body>
     <script>
+        a = 'madam'
+        r = a.split(' ').reverse().join()
+
+        // document.write(a)
+        // document.write("<br>",a,"<br>")
+
         
-        function addition (...arr){
-            ans  = 0
-            for(let a of arr){
-                ans +=a
-            }
-            
-            return ans
+        if(a==r){
+            document.write('yes')
         }
-        document.write(addition(3,3,3,3,4))
+        else{
+            document.write("not")
+        }
     </script>
 </body>
 </html>

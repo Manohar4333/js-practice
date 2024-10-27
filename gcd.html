@@ -7,16 +7,14 @@
 </head>
 <body>
     <script>
-        
-        function addition (...arr){
-            ans  = 0
-            for(let a of arr){
-                ans +=a
+        function gcd(a, b) {
+            while (b !== 0) {
+                let temp = b;
+                b = a % b;
+                a = temp;
             }
-            
-            return ans
+            return a;
         }
-        document.write(addition(3,3,3,3,4))
     </script>
 </body>
 </html>
